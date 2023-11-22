@@ -1,0 +1,174 @@
+header {
+    &.fixed {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        background-color: #101010;
+        .head {
+            display: none;
+        }
+        .all_header {
+            .logo {
+                width: 180px;
+                height: 80px;
+                img {
+                    width: 80%;
+                }
+            }
+            ul {
+                li {
+                    position: relative;
+                    cursor: pointer;
+
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        width: 0;
+                        bottom: -10px;
+                        height: 2px;
+                        transition: 0.3s;
+                    }
+                    &:hover:after {
+                        background-color: orange;
+                        width: 100%;
+                    }
+                    a {
+                        font-size: 15px;
+                    }
+                }
+                border: none;
+            }
+        }
+    }
+    
+    .head {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-top: 15px;
+        span {
+            display: flex;
+            column-gap: 5px;
+            color: white;
+            font-size: 14px;
+            font-weight: 700;
+        }
+    }
+
+    .all_header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: "Roboto Condensed", sans-serif;
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 200px;
+            height: 90px;
+            img {
+                width: 100%;
+            }
+        }
+        ul {
+            display: flex;
+            column-gap: 35px;
+            border-bottom: 2px solid gray;
+            padding: 10px 0;
+            li {
+                position: relative;
+                cursor: pointer;
+
+                &:after {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    width: 0;
+                    bottom: -10px;
+                    height: 2px;
+                    transition: 0.3s;
+                }
+                &:hover:after {
+                    background-color: orange;
+                    width: 100%;
+                }
+                a {
+                    color: white;
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .hamburger {
+            display: none;
+            .hambuger_icon {
+                font-size: 25px;
+                color: orange;
+            }
+        }
+
+        .mobile_menu {
+            opacity: 0;
+            position: absolute;
+            width: 100%;
+            height: 40%;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.9);
+            transition: 1s;
+            ul {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                row-gap: 20px;
+                border: none;
+                li {
+                    a {
+                        color: white;
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        width: 90%;
+    }
+    header {
+        .all_header {
+            .logo {
+            }
+            ul {
+                display: none;
+            }
+            .hamburger {
+                display: block;
+            }
+
+            .mobile_menu {
+                &.active {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+}
+
+@media (min-width: 1024px) {
+}

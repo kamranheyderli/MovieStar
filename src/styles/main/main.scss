@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+// components
+@import "../components/Navbar.scss";
+@import "../components/Card.scss";
+@import "../components/Days.scss";
+@import "../components/DetailsCard.scss";
+@import "../components/Footer.scss";
+
+// pages
+@import "../pages/Home.scss";
