@@ -1,0 +1,18 @@
+.input {
+    position: relative;
+    input {
+        width: 100%;
+        padding: 10px;
+        font-size: 18px;
+        font-weight: 700;
+        &:focus{
+            outline: none;
+        }
+    }
+    .search_icons {
+        position: absolute;
+        top: 13px;
+        right: 20px;
+        font-size: 20px;
+    }
+}

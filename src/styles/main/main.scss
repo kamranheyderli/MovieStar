@@ -1,6 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import 'react-lazy-load-image-component/src/effects/blur.css';
+
 
 * {
     margin: 0;
@@ -21,6 +23,8 @@
 @import "../components/Days.scss";
 @import "../components/DetailsCard.scss";
 @import "../components/Footer.scss";
+@import "../components/SearchInput.scss";
+@import "../components/MovieCard.scss";
 
 // pages
 @import "../pages/Home.scss";

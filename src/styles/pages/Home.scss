@@ -78,6 +78,38 @@
         }
     }
 
+    .all_films_section {
+        width: 100%;
+        .section_head {
+            padding: 20px 0;
+
+            h3 {
+                font-size: 22px;
+                color: #ec7532;
+                padding: 10px 0;
+                border-bottom: 1px solid gray;
+                position: relative;
+                &::after {
+                    position: absolute;
+                    right: auto;
+                    bottom: -1px;
+                    display: block;
+                    width: 125px;
+                    height: 4px;
+                    content: "";
+                    background-image: linear-gradient(to right, #fbbd61, #ec7532);
+                }
+            }
+        }
+        .card_container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            row-gap: 15px;
+            padding: 15px 0;
+        }
+    }
+
     .new_films_section {
         width: 100%;
         padding: 60px 0;
@@ -121,6 +153,12 @@
                 display: flex;
                 flex-direction: column;
                 row-gap: 25px;
+            }
+        }
+        .all_films_section {
+            .card_container {
+                display: flex;
+                flex-direction: column;
             }
         }
     }
