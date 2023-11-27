@@ -1,11 +1,12 @@
 import React from 'react';
 import Rating from 'react-rating-stars-component';
 
+
 const Card = ({ data }) => {
-    const { image, title, rating } = data;
+    const {  image, title, rating } = data;
 
     return (
-        <div className='card'>
+        <div className='card' >
             <div className="image">
                 <img src={image} alt="" />
             </div>
@@ -16,7 +17,7 @@ const Card = ({ data }) => {
                         count={5}
                         size={24}
                         activeColor="#ffd700"
-                        value={rating} 
+                        value={rating}
                     />
                 </div>
             </div>

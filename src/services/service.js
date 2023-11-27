@@ -23,3 +23,14 @@ export const searchMovies = async (baseUrl, apiKey, query) => {
         throw error;
     }
 };
+
+export const fetchMovieDetails = async (baseUrl, apiKey, id) => {
+    const url = `${baseUrl}/movie/${id}?api_key=${apiKey}&language=en-US`
+    try {
+        const response = await axios.get(url);
+        return response.data;
+    } catch (error) {
+        console.error('Error fetching movie details:', error);
+        throw error;
+    }
+};
