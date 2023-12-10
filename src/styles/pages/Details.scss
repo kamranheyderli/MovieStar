@@ -80,3 +80,84 @@
         }
     }
 }
+
+@media (max-width: 767px) {
+    .details_section {
+        width: 100%;
+        height: auto;
+        .movie_details {
+            display: flex;
+            flex-direction: column;
+            .image {
+                width: 100% !important;
+                height: 550px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .info {
+                width: 100% !important;
+                padding: 40px 0;
+                .tittle {
+                    display: flex;
+                    justify-content: space-between;
+                    h2 {
+                        color: white;
+                        font-size: 35px;
+                    }
+                    .imdb {
+                        width: 80px;
+                        height: 80px;
+                        border: 1px solid white;
+                        border-radius: 50%;
+                        background-color: orange;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        span {
+                            font-size: 30px;
+                            font-weight: 700;
+                        }
+                    }
+                }
+                .years {
+                    padding: 15px 0;
+                    span {
+                        color: white;
+                        font-size: 17px;
+                        font-weight: 700;
+                    }
+                }
+                .description {
+                    margin-top: 35px;
+                    p {
+                        color: white;
+                        font-size: 18px;
+                    }
+                }
+                .country {
+                    padding: 25px 0;
+                    h5 {
+                        color: orange;
+                        font-size: 20px;
+                        margin-bottom: 5px;
+                    }
+                    span {
+                        font-size: 19px;
+                        color: white;
+                        font-weight: 700;
+                       
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+}
+
+@media (min-width: 1024px) {
+}
