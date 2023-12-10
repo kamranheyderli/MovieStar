@@ -1,6 +1,7 @@
 .movie_card {
     width: 21%;
     position: relative;
+    overflow: hidden;
     .card_image {
         img {
             width: 100%;
@@ -28,6 +29,7 @@
         flex-direction: column;
         opacity: 0;
         transition: all 1s;
+        border-radius: 10px;
 
         h3 {
             color: white;
@@ -53,10 +55,23 @@
 }
 
 @media (max-width: 767px) {
-    .movie_card{
+    .movie_card {
         width: 45%;
+        .description {
+            h3 {
+                color: white;
+                font-size: 14px;
+                text-align: center;
+            }
+            p {
+              
+                font-size: 5px;
+            }
+            span {
+                color: white;
+            }
+        }
     }
-    
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
