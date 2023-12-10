@@ -21,12 +21,16 @@ const Details = () => {
             try {
                 const details = await fetchMovieDetails(baseUrl, apiKey, id);
                 setMovieDetails(details);
+                window.scrollTo(0, 0);
             } catch (error) {
-                console.log(error)
+                console.log(error);
             }
         };
 
         fetchData();
+
+        return () => {
+        };
     }, [baseUrl, apiKey, id]);
 
 
